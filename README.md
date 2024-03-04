@@ -1,6 +1,6 @@
 # Aboriginal Seasonal Calendar Widget
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/84e7f42b-65db-4363-a581-2267c2654efb/deploy-status)](https://app.netlify.com/sites/seasonal-au/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e3c25721-c58f-4b33-9825-94c9a98ed2ad/deploy-status)](https://app.netlify.com/sites/seasonal-au/deploys)
 
 ## Project Introduction
 
