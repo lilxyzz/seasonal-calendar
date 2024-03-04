@@ -1,0 +1,211 @@
+/* Season title sizing */
+#season-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 2px;
+}
+
+#season-subtitle {
+  font-size: 0.875rem;
+  margin: 0;
+  padding: 2px;
+}
+
+#season-date {
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 2px;
+}
+
+.temperature-info {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+/* Body font */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Existing styles for larger screens */
+@media only screen and (max-device-width: 580px) {
+
+  /* Season title sizing */
+  #season-title {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 2px;
+  }
+
+  #season-subtitle {
+    font-size: 2rem;
+    margin: 0;
+    padding: 2px;
+  }
+  
+  #season-data {
+    font-size: 2rem;
+    margin: 0;
+    padding: 2px;
+  }
+
+  .temperature-info {
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+
+  i#info-icon {
+    font-size: 2.3rem;
+  }
+
+  i.fab.fa-github {
+    font-size: 2.3rem;
+  }
+
+  .tooltip {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 3rem .5rem !important;
+    padding: 0.5rem;
+    display: none;
+    z-index: 2;
+    width: 25rem !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem !important;
+    color: #333;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    white-space: pre-line;
+    max-height: 10rem;
+    /* Limit the maximum height to avoid overflowing the screen */
+    overflow-y: auto;
+    /* Add a scrollbar if the tooltip content overflows */
+    border-radius: 16px;
+    top: calc(100% + 34px);
+    /* Position it just below the season-container */
+    left: -1rem;
+    /* Center horizontally */
+    transform: translateX(-70%);
+    /* Center horizontally */
+  }
+}
+
+/* Style the season container */
+#season-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Default styles for larger screens */
+#season-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  min-width: 7rem;
+}
+
+/* Set max-width for all elements within season-container */
+#season-info,
+#weather-forecast-container {max-width: 100%; padding: 0.5rem;}
+
+/* Allow this section to grow to take available space */
+#season-info {flex: 1;}
+
+/* Media query for screens below 50px width */
+@media (max-width: 50px) {
+  #season-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .temperature-info {margin-top: 8px;}
+
+  /* Move weather-forecast to the top */
+  #weather-forecast-container {
+    order: -1;
+  }
+}
+
+/* Glass Background */
+#season-container {
+  background: rgba(255 255 255 / 83%);
+  border-radius: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* Tooltip container and hover display for all screens */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin: .5rem .5rem;
+  padding: 0.5rem;
+  display: none;
+  z-index: 2;
+  width: 15rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  white-space: pre-line;
+  max-height: 10rem;
+  /* Limit the maximum height to avoid overflowing the screen */
+  overflow-y: auto;
+  /* Add a scrollbar if the tooltip content overflows */
+  border-radius: 16px;
+  top: calc(100% + 34px);
+  /* Position it just below the season-container */
+  left: -1rem;
+  /* Center horizontally */
+  transform: translateX(-70%);
+  /* Center horizontally */
+}
+
+/* Show tooltip on hover */
+.tooltip-container:hover .tooltip {display: block;}
+
+/* Media query for screens below 50px width */
+@media (max-width: 50px) {
+  #season-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .temperature-info {
+    margin-top: 8px;
+  }
+
+  #weather-forecast-container {
+    order: -1;
+  }
+}
+
+/* Icon styling */
+div#git-icon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: space-between;
+}
+
+i#info-icon {padding: 2px; margin: 2px;}
+
+.fa-github {padding: 0px 0px 0px 0.2rem; color: black;}
+
+#weather-icon {height: 1.2rem;}
